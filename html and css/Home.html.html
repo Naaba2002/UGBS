@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Company Website</title>
+    <style>
+      body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: #333;
+  }
+  .service-header {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+  }
+  
+  .header-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(0, 119, 255);
+  }
+  
+  .logo {
+    max-height: 80px;
+    float: left;
+  }
+  
+  .service-nav {
+    color: rgb(254, 250, 250);
+    padding: 0.5em;
+  }
+  
+  .service-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .service-nav li {
+    display: inline;
+    margin-right: 1em;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(11, 8, 8);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .service-nav a:hover {
+    background-color: #0cafcf;
+    color: black;
+  }
+  
+  .service-section {
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .service {
+    background-color: rgb(254, 255, 255);
+    padding: 1.5em;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  .service h2 {
+    color: #4CAF50;
+  }
+  
+  .service p {
+    color: #555;
+  }
+  
+  .service-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 1em;
+  }
+  
+  .service-footer {
+    background-color: rgba(51, 51, 51, 0);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 0.3em;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.7e
+  }
+  
+  .active{
+    color: #0ef440;
+  }
+    </style>
+</head>
+<body>
+  <H1> A COMPANY WEBSITE</H1>
+    <div class="navbar">
+        <a href="Home.html"><u>HOME</u></a>
+        <a href="About.html"><u>ABOUT</u></a>
+        <a href="Contact.html"><u>CONTACT US</u></a>
+        
+    </div>    
+        <header class="service-header">
+          <!-- Video element with controls, muted attribute, and a single source -->
+          <video autoplay loop muted playsinline class="header-video">
+            <source src="video-big.mp4" type="video/mp4" />
+          </video>
+          <div class="header-content">
+            <img
+              src="Log.jpg"
+              alt="Company logo"
+              class="logo"
+            />
+            <h1>SERVICES OFFERED</h1>
+          </div>
+        </header>
+        <section class="service-section">
+          <div class="service">
+            <img
+              src="business.jpg"
+              alt="Service Image 1"
+              class="service-image"
+            />
+            <h2>Business services</h2>
+            <p>
+              Waiting for required entry. Thank you!!
+            </p>
+          </div>
+    
+          <div class="service">
+            <img
+              src="marketing.jpg"
+              alt="Service Image 2"
+              class="service-image"
+            />
+            <h2>Marketing</h2>
+            <p>
+              Branding and identity development, Advertising and campaign 
+              management, Social media marketing and management, Market research 
+              and analysis
+
+            </p>
+          </div>
+    
+          <div class="service">
+            <img
+              src="consulting.jpg"
+              alt="Service Image 3"
+              class="service-image"
+            />
+            <h2>Consulting Services</h2>
+            <p>
+              Strategic planning and implementation, Operational improvement and
+              efficiency, Change management and organizational development, Market
+               research and competitive analysis.
+            </p>
+          </div>
+    
+          <div class="service">
+            <img
+              src="Accounting.jpg"
+              alt="Service Image 4"
+              class="service-image"
+            />
+            <h2>Accounting</h2>
+            <p>
+              Waiting for required entry. Thank you!
+            </p>
+          </div>
+    
+          <div class="service">
+            <img
+              src="customer service.jpg"
+              alt="Service Image 5"
+              class="service-image"
+            />
+            <h2>Customer Services</h2>
+            <p>
+              CUstomer support and helpdesk services, Customer relationship management,
+               Customer feedback and compliant resolution, Customer retention and loyalty
+                programs, Customer training and education, Customer analytics and insights.
+            </p>
+          </div>
+    
+          <div class="service">
+            <img
+              src="company policies.jpg"
+              alt="Service Image 6"
+              class="service-image"
+            />
+            <h2>Company Policies</h2>
+            <p>
+              Development of company policies and procedures, Employee handbook creation,
+              Code of conduct development, Compliance policy management, Risk management 
+              and mitigation strategies, Policy reveiw and update services.
+            </p>
+          </div>
+        </section>
+    
+        <footer class="service-footer">
+          <p>&copy; 2024 Business2Busness</p>
+        </footer>
+</body>
+</html>
